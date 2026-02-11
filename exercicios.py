@@ -11,9 +11,9 @@ print(f"A temperatura em Fahrenheit é: {fahrenheit:.2f}")'''
 
 # Exercício 1.3 - Calculadora de Desconto
 '''preco_original = float(input("Digite o preço original do produto: "))
-desconto = float(input("Digite a porcentagem de desconto: "))
-preco_final = preco_original * (1 - desconto / 100)
-print(f"O preço final do produto com desconto é: {preco_final:.2f}")'''
+desconto = float(input("Digite a porcentagem de desconto: ")) / 100
+preco_final = preco_original - (preco_original * desconto)
+print(f"O preço final do produto com desconto é: R${preco_final:.2f}")'''
 
 # Exercício 1.4 - Idade em Dias
 '''idade = int(input("Digite sua idade em anos: "))
@@ -147,7 +147,9 @@ else:
 '''usuario = input("Digite o nome de usuário: ").lower()
 senha = input("Digite a senha: ")
 if usuario == "admin" and senha == "1234":
-    print("Login bem-sucedido!")'''
+    print("Login bem-sucedido!")
+else:
+    print("Login falhou. Verifique seu nome de usuário e senha.")'''
     
 # Exercício 3.1 - Contagem Regressiva
 '''for n in range(10, -1, -1):
@@ -161,7 +163,6 @@ for n in range(10, -1, -1):
 
 # Exercício 3.3 - Soma de Números
 '''numero = int(input("Digite um número inteiro: "))
-soma = 0
 for n in range(1, numero + 1):
     print(n)'''
     
@@ -217,8 +218,25 @@ for n in range(number):
     print("*" * number)'''
     
 # Exercício 3.10 - Verificador de Primos
-number = int(input("Digite um número inteiro: "))
-if number / 2 :
-    print(f"{number} não é um número primo.")
-else:
-    
+'''number = int(input("Digite um número inteiro: "))
+for n in range(2, number+1):
+    if number % n == 0:
+        print(n, "É primo")'''
+
+
+'''for n in range (1,6):
+    print("Número : ", n)'''
+
+'''for i in range(1,11):
+    resultado = 5 * i
+    print(f"5 x {i} = {resultado}")'''
+
+numero = int(input("Digite um número: "))
+soma = 0
+for n in range(1, numero+1):
+    print(f"{soma} + {n} = {soma + n}")
+    soma = soma + n
+
+
+
+
