@@ -221,7 +221,9 @@ for n in range(number):
 '''number = int(input("Digite um número inteiro: "))
 for n in range(2, number+1):
     if number % n == 0:
-        print(n, "É primo")'''
+        print(n, "É primo")
+    else:
+        print(n, "Não é primo")'''
 
 
 '''for n in range (1,6):
@@ -231,12 +233,79 @@ for n in range(2, number+1):
     resultado = 5 * i
     print(f"5 x {i} = {resultado}")'''
 
-numero = int(input("Digite um número: "))
+'''numero = int(input("Digite um número: "))
 soma = 0
 for n in range(1, numero+1):
     print(f"{soma} + {n} = {soma + n}")
-    soma = soma + n
+    soma = soma + n'''
+
+'''number = int(input("Digite um número inteiro: "))
+primo = True
+for n in range(2, number):
+    if number % n == 0:
+        print(n,)
+        break
+
+''if primo:
+    print(number, "É primo")
+else:
+    print(n, "Não é primo")'''
+
+'''contagem_negativo = 0
+contagem_par = 0
+contagem_impar = 0
+for i in range(5):
+    numero_input = (float(input(f"Digite o {i + 1}º número: ")))
+    if numero_input < 0:
+        contagem_negativo += 1
+    if numero_input % 2 == 0:
+        contagem_par += 1
+    else:
+        contagem_impar += 1
+
+contagens[contagem_negativo,contagem_par,contagem_par]
+
+for i in range (nomes):
+    print(f"O número de {i} é ")'''
+
+# print(f"O número de valores negativos é: {contagem_negativo}")
+# print(f"O número de valores negativos é: {contagem_negativo}")
+# print(f"O número de valores negativos é: {contagem_negativo}")
+
+'''def saudar(nome):
+    mensagem = (f"Olá, {nome}")
+    return mensagem
+
+resultado = saudar("Ana")
+print(resultado)'''
+
+'''def somar(a, b):
+    return a + b
+
+resultado = somar(10,5)
+print("Resultado:", resultado)'''
+
+'''def media(a, b):
+    for i in range (9):
+
+    calcular_media = (a + b) / 2
+    return calcular_media
+
+resultado = media(8,6)
+print(resultado)
+
+quantos numeros
+digitar os (n de input)
+media de 100 números'''
 
 
+def dividir(a, b):
 
+    calculo = a / b
+    return calculo
 
+calcular = dividir()
+for i in range(dividir ()):
+    a = int(input("Defina o número a ser dividido: "))
+    b = int(input("Defina o número divisor: "))
+    print(i)
